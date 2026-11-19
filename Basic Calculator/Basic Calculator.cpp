@@ -47,29 +47,29 @@ int main(){
 	
 	int n, m;
 	
-	if(choice!=0){
+	if(choice!=0&&choice<5){
 		printf("请输入两个整数：");   	
     	scanf("%d %d", &n, &m);
 	}
 
     switch(choice){
         case 1:
-            printf("结果是：%d\n", add(n, m));
+            printf("%d+%d = %d\n", n,m,add(n, m));
             break;
         case 2:
-            printf("结果是：%d\n", sub(n, m));
+            printf("%d-%d= %d\n", n,m,sub(n, m));
             break;
         case 3:
-            printf("结果是：%d\n", mul(n, m));
+            printf("%d*%d= %d\n", n,m,mul(n, m));
             break;
         case 4:
-            printf("结果是：%d\n", div(n, m));
+            printf("%d/%d= %d\n", n,m,div(n, m));
             break;
         case 5:
-            printf("结果是：%d\n", square(n));
+            printf("%d的平方为 %d\n",n, square(n));
             break;
         case 6:
-            printf("结果是：%.2f\n", sqrt(n));
+            printf("%d的开方为%.2f\n", n,sqrt(n));
             break;
     }
     return 0;
