@@ -31,7 +31,7 @@ int square(int n){
     return n*n;
 }
 
-double sqrt(int n){
+double my_sqrt(int n){
     return sqrt(n);
 }
 
@@ -50,6 +50,11 @@ int main(){
 	if(choice!=0&&choice<5){
 		printf("请输入两个整数：");   	
     	scanf("%d %d", &n, &m);
+	}
+	
+	if(choice!=0&&choice>=5){
+		printf("请输入整数：");   	
+    	scanf("%d", &n);
 	}
 
     switch(choice){
